@@ -1,3 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+:root {
+  --primary-color: #f3bf31   ;
+  --secondary-color: #c8ab5b ;
+  --accent1-color: #a29981;
+  --accent2-color: white;
+
+  --heading-font: "Montserrat";
+  --paragraph-font: Nunito, Helvetica, sans-serif;
+
+  --headline-color-on-white: #f3bf31;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #f3bf31;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #a29981  ;
+  --nav-link-color: white;
+  --nav-background-color: #a29981 ;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #c8ab5b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-align: center;
+  }
+
+  p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+  }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -5,13 +40,62 @@ nav {
 }
 
 nav a {
+    font-family: var(--paragraph-font);
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 35px;
 }
 
 nav a:hover {
     background-color: #c8ab5b;
-    color: white
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.homegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+    margin-top: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.articlespotlightgrid {
+    display: grid;
+    grid-template-rows: 80% 1fr;
+    padding-top: 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a29981;
+}
+
+.articlespotlightgrid p {
+    color: var(--paragraph-color-on-color)
+}
+
+footer {
+    background-color: #a29981;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 7%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer a {
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
 }
