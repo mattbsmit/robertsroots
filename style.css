@@ -80,6 +80,23 @@ body {
     color: var(--paragraph-color-on-color)
 }
 
+
+/* Article Page CSS */
+.articlegrid {
+    display: grid;
+    grid-template-rows: 30% 60% 1fr;
+    padding-top: 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a29981;
+}
+
+.articlegrid p {
+    color: var(--paragraph-color-on-color)
+}
+
 footer {
     background-color: #a29981;
     color: white;
