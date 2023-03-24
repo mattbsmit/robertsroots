@@ -80,23 +80,6 @@ body {
     color: var(--paragraph-color-on-color)
 }
 
-
-/* Article Page CSS */
-.articlegrid {
-    display: grid;
-    grid-template-rows: 30% 60% 1fr;
-    padding-top: 5%;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #a29981;
-}
-
-.articlegrid p {
-    color: var(--paragraph-color-on-color)
-}
-
 footer {
     background-color: #a29981;
     color: white;
@@ -115,4 +98,122 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: white;
+}
+
+
+/* Article Page CSS */
+.articlegrid {
+    display: grid;
+    grid-template-rows: 30% 60% 1fr;
+    padding-top: 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a29981;
+}
+
+.articlegrid p {
+    color: var(--paragraph-color-on-color)
+}
+
+
+/* Time Line CSS */
+.timelinegrid {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    gap: 7%;
+    margin-top: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #f3bf31;
+    top: 0;
+    bottom: 0;
+    left: -15%; /* Move the center line */
+    margin-left: -3px;
+}
+
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #c8ab5b;
+    top: 15px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.left {
+    left: -22%; /* Move the little square circle things */
+}
+
+
+.left::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #c8ab5b;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #c8ab5b;
+}
+
+.timelinecontent {
+    padding: 20px 30px;
+    background-color: #a29981;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.timelinecontent p, .timelinecontent h2 {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+}
+
+.container {
+    width: 90%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+.container::before {
+    left: 60px;
+    border: medium solid #f3bf31;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f3bf31 transparent transparent;
+}
+
+.left::after {
+    left: 15px;
 }
