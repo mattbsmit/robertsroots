@@ -118,6 +118,23 @@ footer a:hover {
 }
 
 
+/* Charts Page CSS */
+.chartgrid {
+    display: grid;
+    grid-template-rows: 20% 1fr 20%;
+    padding-top: 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #a29981;
+}
+
+.chartgrid p, .chartgrid h2 {
+    color: var(--paragraph-color-on-color)
+}
+
+
 /* Time Line CSS */
 .timelinegrid {
     display: grid;
