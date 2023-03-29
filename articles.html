@@ -39,7 +39,11 @@
                 </div>
 
                 <div class="articlegrid">
-                    <img src="photos/21MAY2022(0).jpg" alt="Heirlooms">
+                    <div>
+                        <img class="articleSlide" src="photos/21MAY2022(0).jpg" alt="Heirlooms">
+                        <img class="articleSlide" src="photos/07AUG2022.jpg" alt="Heirlooms">
+                        <img class="articleSlide" src="photos/robertsrootsbranches-logo.png" alt="Heirlooms">
+                    </div>
                     <p>
                         This year I decided to "permanently" tag and identify all of my heirlooms.  Each tag contains a description of the item, 
                         who the item belonged to, and the line of ownership of each item.  All items will then be stored with these tags and labels.  
@@ -65,5 +69,24 @@
             <a href="site-plan.html">Site Plan</a>
             <a href="http://robertsrootsandbranches.blogspot.com/?m=1">Orginal Blog</a>
         </footer>
+
+        <script>
+            var index = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("articleSlide");
+                for (i = 0; i < x.length; i++) {
+                    x[i].sytle.display = "none";
+                }
+
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+
+            x[myIndex-1].style.display.block = "block";
+            setTimeout(carousel, 5000);
+            }
+        </script>
     </body>
 </html>

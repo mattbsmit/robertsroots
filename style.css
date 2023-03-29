@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--paragraph-color-on-white);
   }
 
+  a {
+    text-decoration: none;
+  }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -115,6 +119,14 @@ footer a:hover {
 
 .articlegrid p {
     color: var(--paragraph-color-on-color)
+}
+
+.articlegrid img {
+    width: 100%;
+}
+
+.articleSlide {
+    display: none;
 }
 
 
