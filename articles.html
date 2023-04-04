@@ -33,19 +33,46 @@
                         Cemetery and volunteers prepared three mass graves and numerous other gravesites throughout the cemetery.  
                         Dignitaries and officials arrived in the small town.  Investigations began as rescue efforts proved futile.
                     </p>
-                    <p>
-                        Orginally posted August 14, 2022
-                    </p>
+
+                    <p>Orginally posted August 14, 2022</p>
+                </div>
+
+                <div class="articlegrid">
+                    <div>
+                        <img class="articleSlide" src="photos/31MAY2022(0).jpg" alt="Display table">
+                        <img class="articleSlide" src="photos/31MAY2022(1).jpg" alt="Items on table for sale">
+                        <img class="articleSlide" src="photos/31MAY2022(2).jpg" alt="Second display table">
+                        <img class="articleSlide" src="photos/31MAY2022(3).jpg" alt="Photographs, certificates and documents">
+                        <img class="articleSlide" src="photos/31MAY2022(4).jpg" alt="Frontier Mine No, 1 twon map">
+                        <img class="articleSlide" src="photos/31MAY2022(5).jpg" alt="Full display of the event">
+                        <img class="articleSlide" src="photos/31MAY2022(6).jpg" alt="Food">
+                        <img class="articleSlide" src="photos/31MAY2022(7).jpg" alt="Desserts">
+                    </div>
+
+                    <P>
+                        BIG shout out to everyone who helped and came to the Memorial Day open house.<br>
+                        Big shout out to my cousin who traveled from out of state.<br>
+                        Big shout out to my sister who stayed the weekend and helped me out.<br>
+                        Thank you everyone who attended.  I hope you enjoyed the displays and I hope that you were able to learn more about your family.<br>
+                        Here are some photographs for those who were unable to make it.  We missed you!
+                    </P>
+
+                    <p>Orginally posted May 31, 2022</p>
                 </div>
 
                 <div class="articlegrid">
                     <div>
                         <img class="articleSlide" src="photos/21MAY2022(0).jpg" alt="Heirlooms">
-                        <img class="articleSlide" src="photos/07AUG2022.jpg" alt="Heirlooms">
-                        <img class="articleSlide" src="photos/robertsrootsbranches-logo.png" alt="Heirlooms">
+                        <img class="articleSlide" src="photos/21MAY2022(1).jpg" alt="Flowers">
+                        <img class="articleSlide" src="photos/21MAY2022(2).jpg" alt="More flowers">
                     </div>
+                    
                     <p>
-                        This year I decided to "permanently" tag and identify all of my heirlooms.  Each tag contains a description of the item, 
+                        I have been busy getting everything ready for Memorial Day weekend.  I have tagged all the flowers for the Roberts family members 
+                        and for the Frontier Mine No. 1 coal miners.  This is a fun tradition I look forward to every year.  I enjoy paying tribute to 
+                        our ancestors and to the Frontier Mine No. 1 coal miners who died in 1923.  It is my hope that anyone visiting these graves who 
+                        have not been in contact with me, will contact me. This year I decided to "permanently" tag and identify all of my heirlooms.  
+                        Each tag contains a description of the item, 
                         who the item belonged to, and the line of ownership of each item.  All items will then be stored with these tags and labels.  
                         There were a couple of logistics that had to be considered.  I wondered how to label framed photographs without harming the 
                         photograph.  I decided to slip the labels into the frame on the outside of the glass.  Another problem I ran into was, how to 
@@ -57,10 +84,10 @@
                         identify and decorate the book so it is more attractive.  (No originals were harmed in the making of the scrap book.) The second 
                         book, was a book I started for the Roberts family many years ago. It served as a safe way to preserve a couple of oversized 
                         photographs and pages that I used when I taught or gave presentations.  I added three new beautiful pages of heirlooms and descriptions. 
+                        If you have not received your invitation, contact me for the details, or look on our Facebook page.  I am excited to see everyone 
+                        next weekend.  
                     </p>
-                    <p>
-                        Orginally posted May 21, 2022
-                    </p>
+                    <p>Orginally posted May 21, 2022</p>
                 </div>
             </div>
         </main>
@@ -71,21 +98,19 @@
         </footer>
 
         <script>
-            var index = 0;
+            var myIndex = 0;
             carousel();
             
             function carousel() {
-                var i;
-                var x = document.getElementsByClassName("articleSlide");
-                for (i = 0; i < x.length; i++) {
-                    x[i].sytle.display = "none";
-                }
-
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-
-            x[myIndex-1].style.display.block = "block";
-            setTimeout(carousel, 5000);
+              var i;
+              var x = document.getElementsByClassName("articleSlide");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 5000);
             }
         </script>
     </body>
