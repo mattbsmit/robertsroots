@@ -148,6 +148,10 @@ footer a:hover {
     color: var(--paragraph-color-on-color)
 }
 
+.chartgrid img {
+    width: 60%;
+}
+
 
 /* Time Line CSS */
 .timelinegrid {
